@@ -1,0 +1,99 @@
+html{
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+/* -- variables -- */
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+            0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.19),
+            1.3px 2.1px 2.6px -3px hsl(var(--shadow-color) / 0.16);
+    --shadow-elevation-medium:
+            0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.18),
+            1.5px 2.5px 3px -1.5px hsl(var(--shadow-color) / 0.16),
+            6.3px 10.6px 12.9px -3px hsl(var(--shadow-color) / 0.14);
+    --shadow-elevation-high:
+            0.3px 0.5px 0.6px hsl(var(--shadow-color) / 0.17),
+            2px 3.4px 4.1px -0.6px hsl(var(--shadow-color) / 0.16),
+            4.5px 7.6px 9.2px -1.2px hsl(var(--shadow-color) / 0.15),
+            9.3px 15.7px 19px -1.8px hsl(var(--shadow-color) / 0.14),
+            17.8px 30.1px 36.5px -2.4px hsl(var(--shadow-color) / 0.13),
+            31.6px 53.5px 64.8px -3px hsl(var(--shadow-color) / 0.12);
+}
+
+/* --- Box behavior -- */
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    padding: 25px;
+    padding: 25px;
+    width: auto;
+}
+table,
+td{
+    border-collapse: collapse;
+    padding: 0.2rem;
+
+}
+
+table, form, button, .container, input, td
+{ border-radius: 10px; }
+
+
+/* -- font size -- */
+* {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+h1 { font-size: 3rem; }
+
+/* --- colors --- */
+
+* { color: #252323;}
+
+table,  td {
+    font-size: 90%;
+}
+
+body {
+    background: rgb(64,201,255);
+    background: linear-gradient(90deg, rgba(64,201,255,1) 16%, rgba(140,123,255,1) 49%, rgba(232,28,255,1) 96%);
+}
+.container{
+    box-shadow: var(--shadow-elevation-high);
+    background-color: rgba(164, 159, 159, 0.48);
+    border-radius: 15px;
+}
+
+td:hover {
+    background-color: gray;
+    transition:0s;
+}
+
+table,
+td{
+    border: none;
+    background-color: rgba(204, 197, 197, 0.51);
+}
+
+td{
+    transition: 1s;
+}
+
+td:hover,
+li:hover,
+a:hover,
+button:hover { color : orange;}
+
+/* --- Table colors --- */
+
+.initial{
+    background-color: #79a0da;
+}
+.special {
+    background-color: #e3bf83;
+}
+
